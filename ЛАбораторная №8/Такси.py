@@ -42,6 +42,9 @@ def sum_min(N, distances, tariffs):
 def main():
     # Ввод данных
     N = int(input("Введите количество сотрудников: "))
+    while N < 1 or N > 1000:
+        print("Количество сотрудников должно быть в диапазоне от 1 до 1000")
+        N = int(input("Введите количество сотрудников: "))
     distances = []
     tariffs = []
 
